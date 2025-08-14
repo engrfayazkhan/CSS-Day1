@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Selectors Example</title>
+    <style>
+      /* Type Selector — affects ALL <h1> elements */
+      h1 {
+        font-family: Arial, sans-serif;
+        color: darkblue;
+      }
+
+      /* Class Selector — can be reused on multiple elements */
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+      }
+
+      /* ID Selector — affects ONLY the element with id="main-heading" */
+      #main-heading {
+        color: red;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ID selector: unique styling for this heading -->
+    <h1 id="main-heading">Welcome to My Website</h1>
+
+    <!-- Type selector affects this heading too (font + blue color), 
+       but NOT the red color because ID overrides it -->
+    <h1>About Us</h1>
+
+    <!-- Class selector: same yellow background can be used multiple times -->
+    <p class="highlight">This is some important information.</p>
+    <p>Normal paragraph without highlight.</p>
+    <p class="highlight">Another highlighted paragraph.</p>
+  </body>
+</html>
